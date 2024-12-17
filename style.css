@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(58, 12, 163, 0.8), rgba(251, 197, 49, 0.8)),
+                url('laughfi-logo.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Logo */
+.logo-img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Social Media */
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Buy Button */
+.buy-btn {
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #ffc107;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .buy-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

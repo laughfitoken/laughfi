@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laughfi - Make Your Wallet Smile</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, rgba(58, 12, 163, 0.9), rgba(251, 197, 49, 0.9)),
+                        url('laughfi-logo.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Main Container */
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Logo */
+        .logo-img {
+            max-width: 150px; /* Make the logo bigger */
+            margin-bottom: 10px;
+            animation: laugh 2s infinite;
+        }
+
+        @keyframes laugh {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1) rotate(2deg);
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic font */
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Social Media Links */
+        .social {
+            margin-bottom: 20px;
+        }
+
+        .social a {
+            color: #ffcc00;
+            font-size: 1.2rem;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .social a:hover {
+            color: #ffc107;
+        }
+
+        /* Buy Button */
+        .buy-btn {
+            background: linear-gradient(135deg, #ffcc00, #ff8800);
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background: linear-gradient(135deg, #ff8800, #ffcc00);
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-size: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Logo Section -->
+        <header class="logo">
+            <img src="laughfi-logo.png" alt="Laughfi Logo" class="logo-img">
+            <h1>MAKE YOUR WALLET SMILE</h1>
+        </header>
+
+        <!-- Social Media Links -->
+        <section class="social">
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://telegram.org" target="_blank">Telegram</a>
+        </section>
+
+        <!-- Buy Button -->
+        <section class="buy-section">
+            <button class="buy-btn">BUY</button>
+        </section>
+    </div>
+</body>
+</html>
